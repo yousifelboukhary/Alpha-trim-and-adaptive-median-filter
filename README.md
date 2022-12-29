@@ -101,7 +101,6 @@ complexity while Counting Sort has O(n) space complexity.
 Therefore, in our case, we can say that Quick Sort performed better in the Adaptive 
 Median Filter.
 
-    <br>
-    <br>
+    
     
 </p>
