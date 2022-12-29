@@ -21,9 +21,29 @@ repeating the following steps for each pixel in the image:
   <br>
   This filter is usually used to remove both salt & pepper noise and random noise. 
 </p>
-
+<p>
+  <img src= "https://user-images.githubusercontent.com/114557942/210009252-d90c5280-a9de-4408-8fb8-1f0cbc53902a.PNG" alt="alpha trim 5*5" title ="alpha trim 5*5 with trim value = 3" >
+</p>
 <hr>
 <br>
 <br>
+<h2>Adaptive Median Filter</h2>
+<p>The idea of the standard median filter is similar to alpha-trim filter 
+  but instead we calculate the median of neighboring pixels' values (middle value in the window array after sorting). 
+</p>
+<p>
+  However, the standard median filter has the following drawbacks:
+  <dt>
+<li>It fails to remove salt and pepper noise with large percentage (greater than 20%) without causing distortion in the original image.</li>
+<li>It usually has a side-effect on the original image especially when it’s applied with large mask size, see figure 2 with window 7×7.</li> 
+    </dt>
+</p>
 <br>
 <br>
+<p>
+  <strong>Adaptive median filter</strong> is designed to handle these drawbacks by:
+  <dt>
+<li>Seeking a median value that’s not either salt or pepper noise by increasing the window size until reaching such median.</li>
+<li>Replace the noise pixels only. (i.e. if the pixel is not a salt or a pepper, then leave it).</li> 
+    </dt>
+</p>
