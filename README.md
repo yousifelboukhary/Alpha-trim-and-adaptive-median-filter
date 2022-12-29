@@ -31,6 +31,8 @@ repeating the following steps for each pixel in the image:
 <p>The idea of the standard median filter is similar to alpha-trim filter 
   but instead we calculate the median of neighboring pixels' values (middle value in the window array after sorting). 
 </p>
+<img src="https://user-images.githubusercontent.com/114557942/210010184-3f8d1bcc-323f-44ce-b407-fc13770e66c5.PNG" title="adaptive median filter" alt ="adaptive median filter">
+
 <p>
   However, the standard median filter has the following drawbacks:
   <dt>
