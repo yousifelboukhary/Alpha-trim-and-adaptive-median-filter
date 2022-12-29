@@ -25,6 +25,28 @@ repeating the following steps for each pixel in the image:
   <img src= "https://user-images.githubusercontent.com/114557942/210009252-d90c5280-a9de-4408-8fb8-1f0cbc53902a.PNG" alt="alpha trim 5*5" title ="alpha trim 5*5 with trim value = 3" >
 </p>
 <hr>
+
+<br>
+<br>
+  <h3>The implementation of Alpha Trim filter using Kth element and Count sort <h3>
+    <img src = "https://user-images.githubusercontent.com/114557942/210011178-3af88f7b-2018-4ffb-a0f1-ad03b64379e2.png" alt ="adaptive execution time graph" title ="adaptive execution time graph">
+    <h3>Graph discription</h3>
+    The graph above shows how the execution time changes with respect to the window 
+size in the Alpha Trim Filter using Counting Sort verses Kth Element algorithm to 
+sort the pixels in each window.
+    <br>
+    <br>
+      <h3>Conclusion</h3>
+    As we can see in the graph, the execution time of Counting Sort and Kth Element 
+Algorithm appears to be very similar. This is because Counting Sort and Kth 
+Element algorithms both have a time complexity of O(N).
+However, Counting Sort seems to perform slightly better as it has a fewer number 
+of operations in comparison to the Counting Sort algorithm.
+In regards to space Complexity, Counting Sort and Kth Element algorithms both 
+have O(n) space complexity.
+Therefore, in our case, we can say that both algorithms performed equally well 
+however Counting Sort was slightly better.    
+<hr>
 <br>
 <br>
 <h2>Adaptive Median Filter</h2>
@@ -56,7 +78,7 @@ repeating the following steps for each pixel in the image:
 <hr>
 <p>
   <h3>The implementation of Adaptive median filter using Quick Sort and Count sort <h3>
-    <img src = "" alt ="" title ="">
+    <img src = "https://user-images.githubusercontent.com/114557942/210011178-3af88f7b-2018-4ffb-a0f1-ad03b64379e2.png" alt ="adaptive execution time graph" title ="adaptive execution time graph">
     <h3>Graph discription</h3>
     The graph above shows how the execution time changes with respect to the window 
 size in the Adaptive Median Filter using Quick Sort verses Counting Sort to sort the 
