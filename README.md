@@ -31,7 +31,7 @@ repeating the following steps for each pixel in the image:
 <p>The idea of the standard median filter is similar to alpha-trim filter 
   but instead we calculate the median of neighboring pixels' values (middle value in the window array after sorting). 
 </p>
-<img src="https://user-images.githubusercontent.com/114557942/210010184-3f8d1bcc-323f-44ce-b407-fc13770e66c5.PNG" title="adaptive median filter" alt ="adaptive median filter">
+
 
 <p>
   However, the standard median filter has the following drawbacks:
@@ -48,4 +48,38 @@ repeating the following steps for each pixel in the image:
 <li>Seeking a median value that’s not either salt or pepper noise by increasing the window size until reaching such median.</li>
 <li>Replace the noise pixels only. (i.e. if the pixel is not a salt or a pepper, then leave it).</li> 
     </dt>
+</p>
+<p>
+  <img src="https://user-images.githubusercontent.com/114557942/210010184-3f8d1bcc-323f-44ce-b407-fc13770e66c5.PNG" title="adaptive median filter" alt ="adaptive median filter">
+  <img src = "https://user-images.githubusercontent.com/114557942/210010366-a7256918-ab1d-43df-8132-8694d5ad574f.jpg" title="adaptive median filter" alt ="adaptive median filter">
+</p>
+<hr>
+<p>
+  <h3>The implementation of Adaptive median filter using Quick Sort and Count sort <h3>
+    <img src = "" alt ="" title ="">
+    <h3>Graph discription</h3>
+    The graph above shows how the execution time changes with respect to the window 
+size in the Adaptive Median Filter using Quick Sort verses Counting Sort to sort the 
+pixels in each window.
+    <br>
+    <br>
+      <h3>Conclusion</h3>
+    Sorts aren't always necessarily better than one another. In certain situations, 
+quicksort might be preferred for a number of reasons:
+Quicksort is in place, unlike counting sort, which has to create a number of arrays 
+(e.g. use more memory) to do its work.
+It may seem like counting sort is O(n) but consider the intermediate counting array 
+that must be created. The counting array length is essentially the difference 
+between the largest and smallest elements in your original array. If the range is very 
+big, this counting array is massive and this counting array has to be processed. So 
+really, the run time of counting sort is O(N+k) where k is the difference between 
+the largest and smallest elements in the original array.
+In regards to space complexity, Quick Sort wins as it has O(log(N)) space 
+complexity while Counting Sort has O(n) space complexity.
+Therefore, in our case, we can say that Quick Sort performed better in the Adaptive 
+Median Filter.
+
+    <br>
+    <br>
+    
 </p>
